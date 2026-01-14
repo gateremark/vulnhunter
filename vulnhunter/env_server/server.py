@@ -272,11 +272,16 @@ class VulnHunterEnv(Environment[VulnHunterAction, VulnHunterObservation, VulnHun
 
 
 # Create FastAPI Application using OpenEnv helper if available
-env = VulnHunterEnv()
 
 if OPENENV_AVAILABLE:
     # Use OpenEnv's create_fastapi_app for full compatibility
-    app = create_fastapi_app(env)
+    # Requires: env factory, action_cls, observation_cls
+    app = create_fastapi_app(
+        env=lambda: VulnHunterEnv(),
+        action_cls=VulnHunterAction,
+        observation_cls=VulnHunterObservation,
+    )
+    env = VulnHunterEnv()  # For direct usage
 else:
     # Fallback: Create FastAPI app manually
     from fastapi import FastAPI
