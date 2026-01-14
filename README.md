@@ -171,6 +171,21 @@ GRPOConfig(
 
 We tracked training with Weights & Biases:
 
+![Training Metrics](assets/wandb_training.png)
+
+**Key observations:**
+- Security reward improved from ~0.5 → 1.4
+- Loss stabilized near zero
+- Consistent training over 200 steps
+
+![System Metrics](assets/wandb_system.png)
+
+- GPU Power Usage: 200-350W (active training)
+- ~90 minutes total on A100
+
+
+We tracked training with Weights & Biases:
+
 **Key observations:**
 - Security reward improved from ~0.5 → 1.4
 - Loss stabilized near zero
