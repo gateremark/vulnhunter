@@ -6,6 +6,8 @@
 
 **TL;DR**: We built VulnHunter, an OpenEnv-compatible reinforcement learning environment for training AI agents to detect and patch web application vulnerabilities. Using Unsloth and GRPO (Group Relative Policy Optimization), we fine-tuned Qwen2.5-Coder-7B to identify SQL injection, XSS, and Path Traversal vulnerabilities—then generate secure patches.
 
+[Demo video](https://youtu.be/JiPdveVcyoY)
+
 ---
 
 ## The Problem: AI Can Write Code, But Can It Secure It?
