@@ -247,6 +247,14 @@ return send_file(f"/uploads/{filename}")
 
 ---
 
+![Capture-1](assets/terminal-test1.png)
+
+![Capture-2](assets/terminal-test2.png)
+
+![Capture-3](assets/terminal-test3.png)
+
+---
+
 ## Green Agent: A2A Protocol
 
 VulnHunter implements the A2A protocol for interoperability with other agents:
