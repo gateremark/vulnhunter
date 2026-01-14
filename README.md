@@ -308,11 +308,10 @@ vulnhunter/
 
 ## Acknowledgments
 
-Built for the **AgentBeats OpenEnv Challenge** sponsored by:
+Built as part of the **AgentBeats OpenEnv Challenge** - https://rdi.berkeley.edu/agentx-agentbeats.html:
 - **PyTorch** (Meta)
 - **Hugging Face**
 - **Unsloth**
 
 ---
 
-*Built with ❤️ by [gateremark](https://github.com/gateremark)*
