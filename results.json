@@ -1,0 +1,64 @@
+[
+    {
+        "id": "assessment-001",
+        "agent": "vulnhunter-baseline",
+        "score": 1.42,
+        "accuracy": 0.94,
+        "vulnerabilities_detected": 3,
+        "vulnerabilities_fixed": 3,
+        "timestamp": "2026-01-14T01:30:00Z",
+        "configuration": {
+            "model": "gateremark/vulnhunter-agent",
+            "max_tokens": 512,
+            "temperature": 0.7
+        },
+        "details": {
+            "sql_injection": {
+                "detected": true,
+                "fixed": true,
+                "score": 0.47
+            },
+            "xss": {
+                "detected": true,
+                "fixed": true,
+                "score": 0.48
+            },
+            "path_traversal": {
+                "detected": true,
+                "fixed": true,
+                "score": 0.47
+            }
+        }
+    },
+    {
+        "id": "assessment-002",
+        "agent": "vulnhunter-baseline",
+        "score": 1.38,
+        "accuracy": 0.92,
+        "vulnerabilities_detected": 3,
+        "vulnerabilities_fixed": 3,
+        "timestamp": "2026-01-14T02:00:00Z",
+        "configuration": {
+            "model": "gateremark/vulnhunter-agent",
+            "max_tokens": 512,
+            "temperature": 0.7
+        },
+        "details": {
+            "sql_injection": {
+                "detected": true,
+                "fixed": true,
+                "score": 0.46
+            },
+            "xss": {
+                "detected": true,
+                "fixed": true,
+                "score": 0.46
+            },
+            "path_traversal": {
+                "detected": true,
+                "fixed": true,
+                "score": 0.46
+            }
+        }
+    }
+]
