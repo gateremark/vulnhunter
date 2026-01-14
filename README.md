@@ -31,16 +31,30 @@ VulnHunter is a reinforcement learning environment where AI agents learn to:
 
 ### The OpenEnv Environment
 
-We implemented the [OpenEnv standard](https://github.com/meta-pytorch/OpenEnv), which defines a clean interface for RL environments:
+We implemented the [OpenEnv standard](https://github.com/meta-pytorch/OpenEnv) by inheriting from the official base classes:
 
 ```python
-# Agent actions in VulnHunter
-class Action:
+from openenv.core.env_server import Environment, Action, Observation, State
+
+class VulnHunterEnv(Environment[VulnHunterAction, VulnHunterObservation, VulnHunterState]):
+    def reset(self, seed=None, episode_id=None, **kwargs) -> VulnHunterObservation:
+        ...
+    
+    def step(self, action, timeout_s=None, **kwargs) -> VulnHunterObservation:
+        ...
+    
+    @property
+    def state(self) -> VulnHunterState:
+        ...
+
+# Agent actions extend OpenEnv's Action base class
+class VulnHunterAction(Action):
     command: str          # Run security tools (curl, sqlmap)
     read_file: str        # Examine source code
     identify_vuln: dict   # Report vulnerability findings
     patch: dict           # Submit a code fix
 ```
+
 
 ### The Reward Structure
 
