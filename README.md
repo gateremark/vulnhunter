@@ -4,7 +4,7 @@
 [![W&B](https://img.shields.io/badge/W%26B-Training%20Run-orange)](https://wandb.ai/gatere-ai/huggingface/runs/v0dge86p)
 [![AgentBeats](https://img.shields.io/badge/AgentBeats-OpenEnv%20Challenge-green)](https://rdi.berkeley.edu/agentx-agentbeats)
 
-**TL;DR**: We built VulnHunter, an OpenEnv-compatible reinforcement learning environment for training AI agents to detect and patch web application vulnerabilities. Using Unsloth and GRPO (Group Relative Policy Optimization), we fine-tuned Qwen2.5-Coder-7B to identify SQL injection, XSS, and Path Traversal vulnerabilities—then generate secure patches.
+**TL;DR**: We built VulnHunter, an OpenEnv-compatible reinforcement learning environment for training AI agents to detect and patch web application vulnerabilities. Using Unsloth and GRPO (Group Relative Policy Optimization), we fine-tuned Qwen2.5-Coder-7B to identify SQL injection, XSS, and Path Traversal vulnerabilities, then generate secure patches.
 
 [Demo video](https://youtu.be/JiPdveVcyoY)
 
@@ -316,10 +316,7 @@ vulnhunter/
 
 ## Acknowledgments
 
-Built as part of the **AgentBeats OpenEnv Challenge** - https://rdi.berkeley.edu/agentx-agentbeats.html:
-- **PyTorch** (Meta)
-- **Hugging Face**
-- **Unsloth**
+Built as part of the **AgentBeats OpenEnv Challenge** - https://rdi.berkeley.edu/agentx-agentbeats.html: - **PyTorch** (Meta) - **Hugging Face** - **Unsloth** etc.
 
 ---
 
